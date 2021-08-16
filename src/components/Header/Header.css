@@ -104,8 +104,10 @@
     transition: all 0.2s;
   }
   .header__burger_opened {
+    position: relative;
     background: url("../../images/burgerClose.svg");
     transition: all 0.2s;
+    z-index: 2;
   }
   .header__account_opened {
     display: flex;
@@ -119,12 +121,12 @@
     flex-direction: column;
     position: fixed;
     justify-content: space-between;
-    top: 66px;
-    bottom: -16px;
+    top: 0;
+    bottom: 0;
     background: #ffffff;
     right: 0;
     left: 32%;
-    padding: 109px 0 108px;
+    padding: 159px 0 99px;
     z-index: 1;
     animation: 0.5s toLeft;
   }
@@ -166,7 +168,7 @@
     font-size: 10px;
   }
   .header__menu_opened {
-    padding: 44px 0 64px;
+    padding: 144px 0 55px;
     left: 0;
   }
 }

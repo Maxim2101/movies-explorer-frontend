@@ -81,6 +81,9 @@
   .project__backend {
     min-width: 140px;
   }
+  .project__item:last-child{
+    margin-left: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .project__wrapper {
@@ -98,6 +101,7 @@
   }
   .project__item:last-child {
     padding-bottom: 0;
+    margin: 0;
   }
   .project__name {
     font-size: 18px;
