@@ -45,12 +45,11 @@ function HeaderAuthorized({ isBurgerOpen, openBurger }) {
               Сохраненные фильмы
             </NavLink>
           </li>
-
         </ul>
         <div
-            className={`header__account ${
-                isBurgerOpen ? "header__account_opened" : ""
-            }`}
+          className={`header__account ${
+            isBurgerOpen ? "header__account_opened" : ""
+          }`}
         >
           <NavLink to="/profile" className="header__name">
             Аккаунт

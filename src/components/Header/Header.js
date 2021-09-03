@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 import HeaderAuthorized from "../HeaderAuthorized/HeaderAuthorized";
 import HeaderElements from "../HeaderElements/HeaderElements";
 
-function Header({ ifLoginIn }) {
+function Header({ loggedIn }) {
   const [isBurgerOpen, setBurgerOpen] = useState(false);
   function openBurger() {
     setBurgerOpen(!isBurgerOpen);
@@ -15,8 +15,8 @@ function Header({ ifLoginIn }) {
     <header className="header">
       <div className="header__wrapper">
         <Logo />
-        <HeaderElements ifLoginIn={ifLoginIn} />
-        {ifLoginIn ? (
+        <HeaderElements loggedIn={loggedIn} />
+        {loggedIn ? (
           <HeaderAuthorized
             isBurgerOpen={isBurgerOpen}
             openBurger={openBurger}

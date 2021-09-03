@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function HeaderElements({ ifLoginIn }) {
+function HeaderElements({ loggedIn }) {
   return (
     <div
       className={`header__elements ${
-        ifLoginIn ? "header__elements_disable" : ""
+        loggedIn ? "header__elements_disable" : ""
       }`}
     >
       <NavLink

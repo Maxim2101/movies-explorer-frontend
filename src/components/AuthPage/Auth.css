@@ -23,15 +23,7 @@
   padding: 15px;
   margin-bottom: 20px;
 }
-.auth__input:last-child {
-  margin-bottom: 0;
-}
-.auth__input:valid {
-  border-bottom: 2px solid green;
-}
-.auth__input:invalid {
-  border-bottom: 2px solid red;
-}
+
 .auth__input:focus {
-  border: none;
+  border: 1px solid #2be080;
 }

@@ -1,4 +1,22 @@
 .logoPage {
   width: 38px;
   height: 38px;
+  transition: all 1s;
+  cursor: pointer;
+  /*animation: jump 15s ease-in-out infinite;*/
+}
+
+@keyframes jump {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.logoPage:hover {
+  opacity: 0.4;
 }

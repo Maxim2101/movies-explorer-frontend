@@ -14,7 +14,7 @@
   font-size: 12px;
   line-height: 15px;
   border: none;
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-sizing: content-box;
   border-radius: 6px;
   cursor: pointer;
@@ -25,12 +25,17 @@
 .cardList__btn:hover {
   opacity: 0.3;
 }
+.cardList__fetch {
+  padding: 0 30px;
+  text-align: center;
+  color: #ff4062;
+}
 @media all and (max-width: 1279px) {
   .cardList {
     padding: 70px 30px 10px;
     grid-template-columns: repeat(auto-fill, minmax(220px, 339px));
   }
-  .cardList__btn{
+  .cardList__btn {
     padding: 10px 254px;
   }
 }
@@ -42,6 +47,9 @@
     row-gap: 34px;
   }
   .cardList__btn {
-   padding: 10px 50px;
+    padding: 10px 50px;
+  }
+  .cardList__fetch {
+    padding: 0 14px;
   }
 }
