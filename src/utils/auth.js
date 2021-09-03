@@ -55,6 +55,6 @@ class Auth {
   }
 }
 const auth = new Auth({
-  url: "http://localhost:3000",
+  url: "https://apidomains.maxim2101.nomoredomains.monster",
 });
 export default auth;
