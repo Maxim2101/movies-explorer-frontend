@@ -55,6 +55,6 @@ class Auth {
   }
 }
 const auth = new Auth({
-  url: "https://apidomains.maxim2101.nomoredomains.monster",
+  url: "https://domains.maxim21.nomoredomains.monster",
 });
 export default auth;
