@@ -1,0 +1,55 @@
+.cardList {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 38px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  justify-content: center;
+  padding: 70px 70px 10px;
+  margin: 0;
+  list-style-type: none;
+}
+.cardList__btn {
+  width: 200px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  background: #f9f9f9;
+  box-sizing: content-box;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 470px;
+  margin: 50px auto 80px;
+  transition: all 1s;
+}
+.cardList__btn:hover {
+  opacity: 0.3;
+}
+.cardList__fetch {
+  padding: 0 30px;
+  text-align: center;
+  color: #ff4062;
+}
+@media all and (max-width: 1279px) {
+  .cardList {
+    padding: 70px 30px 10px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 339px));
+  }
+  .cardList__btn {
+    padding: 10px 254px;
+  }
+}
+@media all and (max-width: 767px) {
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 20px;
+    row-gap: 34px;
+  }
+  .cardList__btn {
+    padding: 10px 50px;
+  }
+  .cardList__fetch {
+    padding: 0 14px;
+  }
+}
